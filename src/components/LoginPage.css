@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('./assets/images/background.png') no-repeat center center fixed;
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 20px;
+    background-attachment: fixed;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+.login-box {
+    background-color: rgba(28, 28, 28, 0.8); /* Dark background with 80% opacity */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Red shadow for a red theme touch */
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.gif {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    text-align: left;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff; /* White color for text */
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333; /* Dark border */
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #222; /* Dark background for input fields */
+    color: #fff; /* White text color for contrast */
+    transition: border-color 0.3s ease;
+}
+
+.input-box input::placeholder {
+    color: #bbb; /* Light gray placeholder text for better visibility */
+}
+
+.input-box input:focus {
+    border-color: #ff0000; /* Red border on focus */
+    background-color: #333; /* Slightly lighter background on focus */
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff0000; /* Red background for button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+.toggle-link {
+    margin-top: 10px;
+    cursor: pointer;
+    color: #ff0000; /* Red color for toggle link */
+}
+
+.toggle-link:hover {
+    text-decoration: underline;
+}
